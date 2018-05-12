@@ -10,7 +10,7 @@ DIFF_TOOLS=gs-diff-based-testing
 
 echo $EXPECTED_FILES
 
-if [ -d $DIFF_TOOLS]; then
+if [ -d $DIFF_TOOLS ]; then
   cd $DIFF_TOOLS
   git pull origin master
   cd ..
