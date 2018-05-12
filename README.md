@@ -1,4 +1,42 @@
-A sample C++ autograder repo to show how diff-based autograding works. The corresponding assignment can be found at https://github.com/ucsb-gradescope-tools/sample-cpp-assignment.
+A sample C++ autograder that shows how diff-based autograding can be seeded to be somewhat randomized.
+
+The original motivation is an assignment based on gdb, where a student
+is given a binary file that has behavior that is seeded from their
+UCSB email address (e.g. jgaucho@umail.ucsb.edu).
+
+That UCSB email
+address is available when the autograder runs (it is provided in TODO:
+CHECK NAME /autograder/submission_metadata.json ).
+
+In such an assignment, there will be:
+
+* Source code to produce the binary that is given to the students.  The students should supply their email address as a command line parameter when running the binary.   The autograder will pull the email address out of the submission_metadata.json
+
+* A binary given to the students that does something based on the seed
+
+* Some assignment where what the students will submit is based on that seed.
+
+As an example:
+
+* Run the binary suppied to you called `./generateBounds` with your umail address as the command line arg, for instance:
+
+   ```
+   ./generateBounds cgaucho@umail.ucsb.edu
+   ```
+
+The program will give you two numbers, e.g. 4 and 8
+
+Write a program that produces a field of asterisks that has 4 rows and 8 columns, e.g.g
+
+```
+********
+********
+********
+********	
+```
+
+Note that the number of rows and columns will be different for each student.  Each number will be between 3 and 8
+
 
 # Platform specific notes
 
