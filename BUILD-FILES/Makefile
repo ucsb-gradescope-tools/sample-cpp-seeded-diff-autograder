@@ -1,24 +1,12 @@
-BINARIES=helloWorld helloStderr helloFile readFile readStdin countToN
+BINARIES=makeBox
+CXX=g++
+
+CCFLAGS=-Wall -std=c++11
 
 all:	${BINARIES}
 
-helloWorld: helloWorld.cpp
-	g++ -std=c++11 helloWorld.cpp -o helloWorld
-
-helloStderr: helloStderr.cpp
-	g++ -std=c++11 helloStderr.cpp -o helloStderr
-
-helloFile: helloFile.cpp
-	g++ -std=c++11 helloFile.cpp -o helloFile
-
-readFile: readFile.cpp
-	g++ -std=c++11 readFile.cpp -o readFile
-
-readStdin: readStdin.cpp
-	g++ -std=c++11 readStdin.cpp -o readStdin
-
-countToN: countToN.cpp
-	g++ -std=c++11 countToN.cpp -o countToN
+makeBox: makeBox.cpp
+	${CXX} -o $@ $^ ${CCFLAGS}
 
 clean:
 	/bin/rm -rf *.o ${BINARIES}

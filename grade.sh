@@ -1,7 +1,7 @@
 #!/bin/sh
 
-EXPECTED_FILES="countToN.cpp helloFile.cpp helloWorld.cpp helloStderr.cpp \
-                readFile.cpp readStdin.cpp "
+EXPECTED_FILES="makeBox.cpp"
+
 MAKE_TARGET=""
 
 DIFF_TOOLS=gs-diff-based-testing
@@ -21,8 +21,10 @@ fi
 
 if [ "$#" -eq 1 ]; then
     SUBMISSION_SOURCE=`pwd`/$1
+    METADATA_SOURCE=`pwd`/$1/submission_metadata.json
 else
     SUBMISSION_SOURCE=/autograder/submission
+    METADATA_SOURCE=/autograder/submission_metadata.json
 fi
 
 if [ -d $SUBMISSION_SOURCE ]; then  
@@ -31,6 +33,14 @@ else
    echo "ERROR: $SUBMISSION_SOURCE does not exist"
    exit
 fi
+
+if [ -f $METADATA_SOURCE ]; then  
+   echo "Getting metadata from $METADATA_SOURCE"
+else
+   echo "ERROR: $METADATA_SOURCE does not exist"
+   exit
+fi
+
 
 copy_files_from_dir_if_it_exists () {
     if [ -d $1 ]; then
@@ -54,6 +64,9 @@ for f in $EXPECTED_FILES; do
     fi
 done
 
+cp -v $METADATA_SOURCE .
+STUDENT_EMAIL=`../extractEmail.py $METADATA_SOURCE`
+echo "STUDENT_EMAIL is $STUDENT_EMAIL"
 
 make clean
 make $MAKE_TARGET

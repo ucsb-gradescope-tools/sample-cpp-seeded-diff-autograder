@@ -1,0 +1,198 @@
+{
+	"assignment_id": 76930,
+	"created_at": "2018-05-09T20:22:11.256766-07:00",
+	"users": [{
+		"email": "richert@ucsb.edu",
+		"id": 388166,
+		"name": "Richert Wang"
+	}],
+	"previous_submissions": [{
+		"score": "100.0",
+		"results": {
+			"tests": [{
+				"name": "Assignment Operator",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 20.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 20.0
+			}, {
+				"name": "Copy constructor",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 20.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 20.0
+			}, {
+				"name": "Destructor",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 10.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 10.0
+			}, {
+				"name": "Constructors, puts, gets",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 20.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 20.0
+			}, {
+				"name": "Remove function",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 8.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 8.0
+			}, {
+				"name": "Sorted Output",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 7.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 7.0
+			}, {
+				"name": "Accesses to get key",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 5.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 5.0
+			}, {
+				"name": "Accesses to remove key",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 5.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 5.0
+			}, {
+				"name": "Access to sort, output",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 5.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 5.0
+			}],
+			"stdout": null,
+			"execution_time": null,
+			"visibility": null,
+			"score": null,
+			"output": null,
+			"extra_data": null,
+			"leaderboard": []
+		},
+		"submission_time": "2018-05-05T17:53:55.644021-07:00"
+	}, {
+		"score": "60.0",
+		"results": {
+			"tests": [{
+				"name": "Assignment Operator",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 0.0,
+				"output": "--- expected\n\n+++ actual\n\n@@ -3,4 +3,5 @@\n\n \n Construct a small table, assign to self, then check.\n Construct larger table, assign to other, then check.\n-Test passed.\n+ERROR: put did not update original data.\n+Test failed.",
+				"extra_data": null,
+				"max_score": 20.0
+			}, {
+				"name": "Copy constructor",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 0.0,
+				"output": "--- expected\n\n+++ actual\n\n@@ -3,4 +3,5 @@\n\n \n Construct a table, and a copy of it.\n Change each table differently, then compare.\n-Test passed.\n+ERROR: put did not update original data.\n+Test failed.",
+				"extra_data": null,
+				"max_score": 20.0
+			}, {
+				"name": "Destructor",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 10.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 10.0
+			}, {
+				"name": "Constructors, puts, gets",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 20.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 20.0
+			}, {
+				"name": "Remove function",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 8.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 8.0
+			}, {
+				"name": "Sorted Output",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 7.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 7.0
+			}, {
+				"name": "Accesses to get key",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 5.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 5.0
+			}, {
+				"name": "Accesses to remove key",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 5.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 5.0
+			}, {
+				"name": "Access to sort, output",
+				"tags": null,
+				"number": null,
+				"visibility": null,
+				"score": 5.0,
+				"output": null,
+				"extra_data": null,
+				"max_score": 5.0
+			}],
+			"stdout": null,
+			"execution_time": null,
+			"visibility": null,
+			"score": null,
+			"output": null,
+			"extra_data": null,
+			"leaderboard": []
+		},
+		"submission_time": "2018-05-05T17:54:26.674280-07:00"
+	}]
+}
